@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Coin</title>
+    <title>Indian Annual Shower Coin</title>
     <style>
       body {
         font-family: Arial, sans-serif;
         text-align: center;
         padding: 50px;
-        background-color: #f5f5f5;
+        background-color: #f4f4f4;
       }
       h1 {
-        color: #333;
+        color: #f39c12;
+      }
+      p {
+        color: #2c3e50;
+        font-size: 20px;
+      }
+      img {
+        width: 80%;
+        max-width: 600px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .meme-text {
+        font-size: 25px;
+        font-weight: bold;
+        color: #e74c3c;
+        margin-top: 20px;
+      }
+      .coin-link {
+        font-size: 18px;
+        color: #3498db;
+      }
+      footer {
+        margin-top: 50px;
+        font-size: 14px;
+        color: #7f8c8d;
       }
     </style>
   </head>
   <body>
-    <h1>🚀 Welcome to My Coin!</h1>
-    <p>This will be the official site for my crypto project.</p>
+    <h1>Welcome to the Indian Annual Shower Coin!</h1>
+    <p>Where the annual shower happens... and it’s not what you expect!</p>
+    <!-- Replace with your meme image URL -->
+    <img src="https://example.com/dirty-lake-meme.jpg" alt="Dirty Lake Meme">
+    <div class="meme-text">
+      "Come for the shower, stay for the memes!"
+    </div>
+    <div class="coin-link">
+      <p>Check out the $IASC token, coming soon!</p>
+    </div>
+    <footer>
+      <p>&copy; 2025 Indian Annual Shower Coin. All rights reserved.</p>
+    </footer>
   </body>
 </html>
