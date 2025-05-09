@@ -4,21 +4,44 @@
   <meta charset="UTF-8">
   <title>Indian Annual Shower Coin</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      height: 100vh;
+      color: #a4cc3a;
       background-image: url('https://raw.githubusercontent.com/mknitski/coin-site/main/garbage-pollution-waste-dirty-lake-090236772_prevstill.webp');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      height: 100vh;
-      color: #a4cc3a; /* Stinky green */
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 30, 0, 0.7);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-shadow: 2px 2px 5px #3e4e2e;
+      text-align: center;
+      height: 100%;
+      padding: 20px;
     }
 
     .title {
@@ -28,21 +51,61 @@
       border: 5px dashed #a4cc3a;
       border-radius: 20px;
       box-shadow: 0 0 30px #88aa22;
-      backdrop-filter: blur(5px);
+      text-shadow: 2px 2px 5px #3e4e2e;
     }
 
-    .tagline {
-      font-size: 1.5em;
-      background-color: rgba(30, 40, 20, 0.6);
-      padding: 15px;
-      margin-top: 20px;
-      border-radius: 10px;
-      max-width: 80%;
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .button {
+      background-color: #597d0c;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 15px #7fa83e;
+      transition: transform 0.2s, background-color 0.2s;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #729d1a;
+      transform: scale(1.05);
+    }
+
+    .mission {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      background-color: rgba(10, 20, 5, 0.5);
+      padding: 10px;
+      color: #c3e56b;
+      text-shadow: 1px 1px 2px #2e3912;
     }
   </style>
 </head>
 <body>
-  <div class="title">💩 Indian Annual Shower Coin 💦</div>
-  <div class="tagline">The only currency that smells worse than your uncle’s bathtub </div>
+  <div class="content">
+    <div class="title">Indian Annual Shower Coin</div>
+
+    <div class="buttons">
+      <a class="button" href="https://example.com" target="_blank">Buy $IASC</a>
+      <a class="button" href="https://t.me/yourtelegram" target="_blank">Join Telegram</a>
+    </div>
+  </div>
+
+  <div class="mission">
+    Our mission: To celebrate the rare and powerful act of the annual cleanse — a ritual of resilience, rebellion, and raw musk.
+  </div>
 </body>
 </html>
